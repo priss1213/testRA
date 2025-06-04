@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue AR - Meubles & Accessoires</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Mon Catalogue en Réalité Augmentée</h1>
+    <p>Visualisez nos produits directement chez vous !</p>
+  </header>
+
+  <main>
+    <section class="produit">
+      <h2>Chaise Design</h2>
+      <model-viewer src="models/chaise.glb"
+                    alt="Chaise Design"
+                    ar ar-modes="webxr scene-viewer quick-look"
+                    auto-rotate camera-controls
+                    shadow-intensity="1"
+                    environment-image="neutral"
+                    class="viewer">
+      </model-viewer>
+      <p><em>Essayez cette chaise dans votre salon en AR.</em></p>
+    </section>
+
+    <section class="produit">
+      <h2>Lunettes Élégantes</h2>
+      <model-viewer src="models/lunettes.glb"
+                    alt="Lunettes Élégantes"
+                    ar ar-modes="webxr scene-viewer quick-look"
+                    auto-rotate camera-controls
+                    shadow-intensity="1"
+                    environment-image="neutral"
+                    class="viewer">
+      </model-viewer>
+      <p><em>Testez ces lunettes virtuellement en 3D ou AR.</em></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 MonEntreprise. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
